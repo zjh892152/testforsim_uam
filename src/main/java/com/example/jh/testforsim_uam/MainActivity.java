@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
         ((TextView) findViewById(R.id.myTextView)).setText(
                 "sim0State:" + (myDualsimBase = DoubleSimOperator.getDoubleSim(getApplicationContext())).getSim0State() +
                         "\r\nsim1State:" + myDualsimBase.getSim1State() +
